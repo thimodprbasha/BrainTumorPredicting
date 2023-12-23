@@ -1,0 +1,112 @@
+.body {
+  text-align: center;
+  padding: 30px;
+  color: #000000;
+}
+
+.body span {
+  font-size: 14px;
+}
+
+.card {
+  width: 300px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card img {
+  height: 200px;
+  width: 100%;
+}
+
+.line {
+  padding: 0 !important;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  width: 100%;
+  border-top: 1px solid #0b6efd;
+}
+
+.line-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.line-text-result {
+  font-style: italic;
+}
+
+.wrapper {
+  overflow: auto;
+  max-height: 80vh;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.content {
+  padding: 25px;
+}
+
+.image-upload > input {
+  display: none;
+}
+
+.image-upload .image-upload-icon {
+  z-index: 1;
+  position: absolute;
+}
+
+.image-upload svg {
+  font-size: 20px;
+  margin: 5px;
+}
+.image-upload .menu-select-icon {
+  color: white;
+}
+
+.image-upload .menu .menu-item svg {
+  color: black;
+}
+
+.menu {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.menu-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.image-upload .menu .menu-item {
+  z-index: 1;
+  height: auto;
+  width: auto;
+  background-color: white;
+  left: 14px;
+  top: 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 6px;
+  position: absolute;
+  transition: visibility 0s, opacity 0.2s linear;
+}
+
+.image-upload .menu .menu-item .item {
+  padding: 4px 6px 4px 4px;
+}
+
+.image-upload .menu .menu-item .item:hover {
+  border-radius: 6px;
+  background: #f1f1f1;
+}
+
+.image-upload-icon:hover ~ .menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu:hover {
+  visibility: visible;
+  opacity: 1;
+}
